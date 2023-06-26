@@ -1,0 +1,11 @@
+document:
+the document object represent a web page that is load in the browser .By accessing the
+document object we can access the elementin the HTML page with help of document objects .
+we can add dynamic content to our web page the document object can be accessed window document or
+just document
+
+
+window object:
+    the window object is top most object of the DOM hierarchy .it represents a browser
+window or frame that displays the contents of the webpage whenever awindow appears on the screen to
+display the contents of the documentthe object is created.
