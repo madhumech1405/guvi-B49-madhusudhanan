@@ -1,0 +1,24 @@
+let  json1='{"name":"madhu","age":28}';
+let json2='{"name":"varshith","age":8}';
+function compareJSON(json1,json2){
+  let obj1=JSON.parse(json1);
+  let obj2=JSON.parse(json2);
+    
+  if(Object.key(obj1).length  !=Object.key(obj2).length){
+    return false;
+  }
+    
+for(let key in obj1){
+  if (obj2.hasownProperty(key)||obj1[key]!=obj2[key]){
+    return false;
+  }
+}
+for(let key in obj2){
+  if (obj1.hasownProperty(key)||obj2[key]!=obj1[key]){
+    return false;
+  }
+}
+return true;
+}
+let result=compareJSON(json1,json2);
+console.log(result);
