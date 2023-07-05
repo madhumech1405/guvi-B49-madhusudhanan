@@ -1,0 +1,48 @@
+class UberPrices {
+  constructor(baseFare, costPerMinute, costPerMile) {
+    this._baseFare = baseFare;
+    this._costPerMinute = costPerMinute;
+    this._costPerMile = costPerMile;
+  }
+
+  
+  get baseFare() {
+    return this._baseFare;
+  }
+
+  set baseFare(baseFare) {
+    this._baseFare = baseFare;
+  }
+
+  get costPerMinute() {
+    return this._costPerMinute;
+  }
+
+  set costPerMinute(costPerMinute) {
+    this._costPerMinute = costPerMinute;
+  }
+
+
+  get costPerMile() {
+    return this._costPerMile;
+  }
+
+  set costPerMile(costPerMile) {
+    this._costPerMile = costPerMile;
+  }
+}
+
+const prices = new UberPrices(2.5, 0.15, 1.25);
+
+
+console.log(prices.baseFare); 
+prices.baseFare = 3.0;
+console.log(prices.baseFare); 
+
+console.log(prices.costPerMinute);
+prices.costPerMinute = 0.2;
+console.log(prices.costPerMinute); 
+
+console.log(prices.costPerMile); 
+prices.costPerMile = 1.5;
+console.log(prices.costPerMile);

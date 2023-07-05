@@ -1,0 +1,54 @@
+class Person {
+  constructor(firstName, lastName, age, gender) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  
+  getFirstName() {
+    return this.firstName;
+  }
+
+  setFirstName(firstName) {
+    this.firstName = firstName;
+  }
+
+
+  getLastName() {
+    return this.lastName;
+  }
+
+
+  setLastName(lastName) {
+    this.lastName = lastName;
+  }
+
+
+  getAge() {
+    return this.age;
+  }
+
+  
+  setAge(age) {
+    this.age = age;
+  }
+
+
+  getGender() {
+    return this.gender;
+  }
+
+  setGender(gender) {
+    this.gender = gender;
+  }
+}
+
+let person = new Person("MADHUsudhanan", "jaganathan", 28, "Male");
+
+console.log(person.getFirstName()); 
+
+console.log(person.getLastName()); 
+console.log(person.getgender());
+console.log(person.getAge());
